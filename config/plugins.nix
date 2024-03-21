@@ -1,5 +1,0 @@
-{
-   plugins = {
-   enable = true;
-   };
-}
