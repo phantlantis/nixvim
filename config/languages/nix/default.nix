@@ -1,5 +1,4 @@
-{
-  {helpers, ...}:{
+  {helpers, ...}: {
     plugins = {
       nix.enable = true;
 
@@ -13,8 +12,6 @@
           code_actions.statix.enable = true;
         };
       };
-
-    }
-  }
-
+    };
 }
+
