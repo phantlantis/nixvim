@@ -2,7 +2,7 @@
     config.options = {
       number = true;
       shiftwidth = 2;
-      relativenumber = 2;
+      relativenumber = true;
     };
     
     config.clipboard = {
