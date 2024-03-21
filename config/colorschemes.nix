@@ -1,5 +1,5 @@
 {
-   plugins.colorschemes.onedark = {
+   colorschemes.onedark = {
    enable = true;
    };
 }
