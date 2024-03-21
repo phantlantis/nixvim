@@ -4,5 +4,6 @@
     ./bufferline.nix
     ./colorschemes.nix
     ./options.nix
+    ./languages/nix
   ];
 }
