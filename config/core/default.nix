@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   imports = [
+    ./colorschemes.nix
     ./core.nix
     ./keymaps.nix
     ./neogen.nix
