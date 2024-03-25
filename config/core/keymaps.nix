@@ -3,7 +3,7 @@
     {
       mode = "n";
       key = "<leader>w";
-      action = ":w<CR>"
+      action = ":w<CR>";
     }
   ];
 }
