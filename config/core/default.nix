@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   imports = [
     ./core.nix
+    ./keymaps.nix
     ./neogen.nix
     ./treesitter.nix
   ];
@@ -11,7 +12,6 @@
   plugins = {
     surround.enable = true;
     comment-nvim.enable = true;
-
   };
 
 }
