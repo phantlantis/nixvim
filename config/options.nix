@@ -1,6 +1,0 @@
-{
-    config.globals = {
-      mapleader = " ";
-    };
-   
-}
