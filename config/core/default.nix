@@ -3,7 +3,9 @@
     ./core.nix
     ./keymaps.nix
     ./neogen.nix
+    ./snippets.nix
     ./treesitter.nix
+    ./ultimate-autopairs.nix
   ];
 
   globals.mapleader = " ";

@@ -5,6 +5,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-parts.url = "github:hercules-ci/flake-parts";
+
+    plugin-ultimate-autopairs = {
+      url = "github:altermo/ultimate-autopair.nvim";
+      flake = false;
+    };
   };
 
   outputs = {
@@ -35,7 +40,11 @@
             # inherit (inputs) foo;
           };
         };
-        nvim = nixvim'.makeNixvimWithModule nixvimModule;
+        nvim = nixvim'.makeNixvimWithModule {
+          inherit pkgs;
+          extraSpecialArgs = {inherit inputs;};
+          module = ./config/main.nix;
+        };
       in {
         checks = {
           # Run `nix flake check .` to verify that your config is not broken

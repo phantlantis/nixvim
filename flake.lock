@@ -265,6 +265,22 @@
         "type": "github"
       }
     },
+    "plugin-ultimate-autopairs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1708591446,
+        "narHash": "sha256-ZyScowo3ATvvWUDwtJHF09vdLKC4oTJgvzxS9ZtLsgU=",
+        "owner": "altermo",
+        "repo": "ultimate-autopair.nvim",
+        "rev": "6ecf7461d44513af89f8257f057fcc99e9297612",
+        "type": "github"
+      },
+      "original": {
+        "owner": "altermo",
+        "repo": "ultimate-autopair.nvim",
+        "type": "github"
+      }
+    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat_2",
@@ -297,7 +313,8 @@
       "inputs": {
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
-        "nixvim": "nixvim"
+        "nixvim": "nixvim",
+        "plugin-ultimate-autopairs": "plugin-ultimate-autopairs"
       }
     },
     "systems": {
