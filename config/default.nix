@@ -3,6 +3,7 @@
   imports = [
     ./core
     ./colorschemes.nix
+    ./languages/json
     ./languages/nix
   ];
 }
