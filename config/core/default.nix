@@ -1,5 +1,7 @@
 {pkgs, ...}: {
   imports = [
+    ./autocmd.nix
+    ./cmp.nix
     ./colorschemes.nix
     ./core.nix
     ./keymaps.nix

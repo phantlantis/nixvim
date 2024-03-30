@@ -1,4 +1,4 @@
-  {helpers, ...}: {
+  { helpers, ... }: {
     plugins = {
       nix.enable = true;
 
