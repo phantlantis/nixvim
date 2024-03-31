@@ -4,6 +4,8 @@
     cmp-path.enable = true;
     cmp-nvim-lsp.enable = true;
     cmp_luasnip.enable = true;
+    cmp-cmdline.enable = true;
+    cmp-git.enable = true;
     lspkind = {
       enable = true;
       cmp.enable = true;
@@ -16,7 +18,7 @@
         "vim-dadbod-completion" = "[DB]";
       };
     };
-  cmp = {
+    cmp = {
       enable = true;
       settings = {
         snippet.expand = ''
@@ -40,6 +42,47 @@
           {name = "luasnip";}
         ];
       };
+      filetype = {
+        gitcommit = {
+          sources = [
+            {name = "cmp_git";}
+            {name = "buffer";}
+          ];
+        };
+        sql = {
+          sources = [
+            {name = "vim-dadbod-completion";}
+            {name = "buffer";}
+          ];
+        };
+      };
+      cmdline = {
+        "/" = {
+          mapping = {
+            __raw = "cmp.mapping.preset.cmdline()";
+          };
+          sources = [
+            {name = "buffer";}
+          ];
+        };
+        "?" = {
+          mapping = {
+            __raw = "cmp.mapping.preset.cmdline()";
+          };
+          sources = [
+            {name = "buffer";}
+          ];
+        };
+        ":" = {
+          mapping = {
+            __raw = "cmp.mapping.preset.cmdline()";
+          };
+          sources = [
+            {name = "path";}
+            {name = "cmdline";}
+          ];
+        };
+      };
     };
-    };
+  };
 }
