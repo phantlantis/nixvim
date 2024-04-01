@@ -8,15 +8,15 @@
     ./neogen.nix
     ./snippets.nix
     ./treesitter.nix
+    ./telescope
     ./ultimate-autopairs.nix
   ];
 
   globals.mapleader = " ";
   clipboard.register = "unnamedplus";
-  
+
   plugins = {
     surround.enable = true;
     comment-nvim.enable = true;
   };
-
 }
